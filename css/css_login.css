@@ -1,0 +1,120 @@
+/* ==========================================
+   ESTILOS DA PÁGINA DE LOGIN E CADASTRO
+   ========================================== */
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 200px); /* Desconta header e footer */
+    padding: 40px 0;
+}
+
+.login-card {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 450px;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    border: 1px solid #e5e7eb;
+}
+
+.login-title {
+    font-size: 1.8rem;
+    color: #1e3a8a;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.login-subtitle {
+    color: #6b7280;
+    font-size: 0.95rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #374151;
+}
+
+.form-input {
+    padding: 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.form-input:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.btn-submit-login {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 6px;
+    font-size: 1.05rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-top: 10px;
+}
+
+.btn-submit-login:hover {
+    background-color: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+.register-box {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.register-box p {
+    color: #4b5563;
+    margin-bottom: 15px;
+    font-size: 0.95rem;
+}
+
+.btn-register {
+    display: block;
+    background-color: #f3f4f6;
+    color: #2563eb;
+    padding: 12px;
+    border-radius: 6px;
+    font-weight: 600;
+    border: 1px solid #d1d5db;
+    transition: all 0.3s;
+}
+
+.btn-register:hover {
+    background-color: #e5e7eb;
+    color: #1d4ed8;
+    border-color: #9ca3af;
+}
+
+/* Responsividade do Login */
+@media (max-width: 480px) {
+    .login-card {
+        padding: 25px 20px;
+    }
+}

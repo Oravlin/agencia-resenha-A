@@ -1,0 +1,22 @@
+/* Estilos para os botões de rádio no Cadastro */
+.radio-group {
+    display: flex;
+    gap: 20px;
+    margin-top: 5px;
+}
+
+.radio-group label {
+    font-size: 0.95rem;
+    color: #4b5563;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.radio-group input[type="radio"] {
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+    accent-color: #2563eb; /* Deixa a bolinha azul combinando com o tema */
+}
