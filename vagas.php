@@ -1,4 +1,5 @@
 <?php
+    session_start();
     include "conexao.php";
     
     $codVaga = isset($_GET['id']) ? (int)$_GET['id'] : 0;
@@ -37,7 +38,12 @@
                 <ul class="nav-menu">
                     <li><a href="index.php" class="nav-link">Início</a></li>
                     <li><a href="index.php#vagas" class="nav-link">Vagas</a></li>
-                    <li><a href="login.php" class="btn-login">Entrar / Cadastrar</a></li>
+                   <?php if(isset($_SESSION["id"])): ?>
+                        <li class="nav-link">Olá, <?=htmlspecialchars($_SESSION["nome"])?></li>
+                        <li><a href="logout.php"></a></li>
+                    <?php else: ?>
+                        <li><a href="login.php" class="btn-login">Entrar / Cadastrar</a></li>
+                    <?php endif; ?>
                 </ul>
             </nav>
         </div>
